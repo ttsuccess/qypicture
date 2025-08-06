@@ -1,0 +1,11 @@
+# 对象存储配置（需要从腾讯云获取）
+cos:
+  client:
+    host: https://qianyaun-1324749739.cos.ap-guangzhou.myqcloud.com
+    secretId: AKIDsdIsIXZcXFnALIF4g7MUTFnANWSExb9f
+    secretKey: W0OLG1Yu2zkHdmhS0MUOuELEvSmwufDX
+    region: ap-guangzhou
+    bucket: qianyaun-1324749739
+
+#  secretId: AKIDsdIsIXZcXFnALIF4g7MUTFnANWSExb9f
+#  secretKey: W0OLG1Yu2zkHdmhS0MUOuELEvSmwufDX
