@@ -2,7 +2,7 @@ package hunan.qianyuan.qypictureback.mapper;
 
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import hunan.qianyuan.qypictureback.model.entity.Picture;
+import hunan.qianyuan.qypictureback.domain.entity.Picture;
 
 /**
  * <p>

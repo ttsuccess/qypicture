@@ -1,10 +1,10 @@
 package hunan.qianyuan.qypictureback.aop;
 
-import hunan.qianyuan.qypictureback.annotation.AuthCheck;
+import hunan.qianyuan.qypictureback.annotations.AuthCheck;
 import hunan.qianyuan.qypictureback.exception.BusinessException;
 import hunan.qianyuan.qypictureback.exception.ErrorCode;
-import hunan.qianyuan.qypictureback.model.entity.User;
-import hunan.qianyuan.qypictureback.model.enums.UserRoleEnum;
+import hunan.qianyuan.qypictureback.domain.entity.User;
+import hunan.qianyuan.qypictureback.enums.UserRoleEnum;
 import hunan.qianyuan.qypictureback.service.IUserService;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;

@@ -7,7 +7,7 @@ import com.qcloud.cos.exception.CosServiceException;
 import com.qcloud.cos.exception.MultiObjectDeleteException;
 import com.qcloud.cos.model.*;
 import com.qcloud.cos.model.ciModel.persistence.PicOperations;
-import hunan.qianyuan.qypictureback.config.CosClientConfig;
+import hunan.qianyuan.qypictureback.configuration.CosClientConfig;
 import org.springframework.stereotype.Component;
 import javax.annotation.Resource;
 import java.io.File;

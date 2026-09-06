@@ -3,10 +3,10 @@ package hunan.qianyuan.qypictureback.service;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
-import hunan.qianyuan.qypictureback.model.dto.space.SpaceAddRequest;
-import hunan.qianyuan.qypictureback.model.dto.space.SpaceQueryRequest;
-import hunan.qianyuan.qypictureback.model.entity.Space;
-import hunan.qianyuan.qypictureback.model.vo.SpaceVO;
+import hunan.qianyuan.qypictureback.domain.dto.space.SpaceAddRequest;
+import hunan.qianyuan.qypictureback.domain.dto.space.SpaceQueryRequest;
+import hunan.qianyuan.qypictureback.domain.entity.Space;
+import hunan.qianyuan.qypictureback.domain.vo.SpaceVO;
 
 
 import javax.servlet.http.HttpServletRequest;

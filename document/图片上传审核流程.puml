@@ -1,0 +1,45 @@
+@startuml
+title 图片上传与审核业务流程
+
+start
+:用户登录系统;
+
+if (上传方式?) then (文件上传)
+    :选择本地图片文件;
+    :调用 FilePictureUpload;
+else (URL 上传)
+    :输入图片 URL;
+    :调用 UrlPictureUpload;
+endif
+
+:PictureUploadTemplate 模板方法处理;
+:校验图片格式与大小;
+:上传到腾讯云 COS;
+:Jsoup 解析获取图片元信息;
+:(宽高/格式/体积/主色调);
+:创建 Picture 记录;
+:审核状态设为"待审核";
+
+if (用户角色?) then (管理员)
+    :自动审核通过;
+else (普通用户)
+    :进入审核队列;
+endif
+
+partition "管理员审核" {
+    :图片管理页面查看待审核图片;
+    if (审核结果?) then (通过)
+        :审核状态设为"通过";
+        :图片进入公共图库;
+    else (拒绝)
+        :审核状态设为"拒绝";
+        :填写拒绝原因;
+    endif
+}
+
+:用户可在空间中查看图片;
+:支持以图搜图、颜色搜索;
+:支持协同编辑(裁剪/旋转/缩放);
+
+stop
+@enduml

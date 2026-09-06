@@ -1,24 +1,24 @@
 package hunan.qianyuan.qypictureback.controller;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import hunan.qianyuan.qypictureback.annotation.AuthCheck;
+import hunan.qianyuan.qypictureback.annotations.AuthCheck;
 import hunan.qianyuan.qypictureback.common.BaseResponse;
 import hunan.qianyuan.qypictureback.common.DeleteRequest;
 import hunan.qianyuan.qypictureback.common.ResultUtils;
 import hunan.qianyuan.qypictureback.exception.BusinessException;
 import hunan.qianyuan.qypictureback.exception.ErrorCode;
 import hunan.qianyuan.qypictureback.exception.ThrowUtils;
-import hunan.qianyuan.qypictureback.model.constant.UserConstant;
+import hunan.qianyuan.qypictureback.constants.UserConstant;
 
-import hunan.qianyuan.qypictureback.model.dto.space.SpaceAddRequest;
-import hunan.qianyuan.qypictureback.model.dto.space.SpaceEditRequest;
-import hunan.qianyuan.qypictureback.model.dto.space.SpaceQueryRequest;
-import hunan.qianyuan.qypictureback.model.dto.space.SpaceUpdateRequest;
+import hunan.qianyuan.qypictureback.domain.dto.space.SpaceAddRequest;
+import hunan.qianyuan.qypictureback.domain.dto.space.SpaceEditRequest;
+import hunan.qianyuan.qypictureback.domain.dto.space.SpaceQueryRequest;
+import hunan.qianyuan.qypictureback.domain.dto.space.SpaceUpdateRequest;
 
-import hunan.qianyuan.qypictureback.model.entity.Space;
-import hunan.qianyuan.qypictureback.model.entity.User;
+import hunan.qianyuan.qypictureback.domain.entity.Space;
+import hunan.qianyuan.qypictureback.domain.entity.User;
 
-import hunan.qianyuan.qypictureback.model.vo.SpaceVO;
+import hunan.qianyuan.qypictureback.domain.vo.SpaceVO;
 import hunan.qianyuan.qypictureback.service.ISpaceService;
 import hunan.qianyuan.qypictureback.service.IUserService;
 import org.springframework.beans.BeanUtils;
